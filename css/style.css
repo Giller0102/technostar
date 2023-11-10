@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+@import url(normalize.css);
+@import url(fonts.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+button {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+body {
+  background: url(../img/bg.png);
+  background-size: cover;
+  color: #F8F8F8;
+  padding: 0px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.first-screen {
+  background: url(../img/main__bg.png);
+  background-size: cover;
+}
+
+.header-content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 46px;
+}
+
+.header__nav {
+  width: 647px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.nav__item, .number-of-phone {
+  display: block;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav {
+  width: 432px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .container {
+  width: 1225px;
+  padding-top: 114px;
+  padding-bottom: 250px;
+}
+
+h1 {
+  color: #F1F1F1;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  font-family: "bebasneuecyrillic";
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.main__text {
+  color: #F8F8F8;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 1005px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.main__btn {
+  width: 376px;
+  height: 84px;
+  border-radius: 100px;
+  background: #DF4C3F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.main__btn-icon img {
+  width: 49.164px;
+}
+
+.main__btn-text a {
+  color: #F8F8F8;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.advantages {
+  padding-top: 50px;
+}
+
+h2 {
+  color: #DF4C3F;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages h2 {
+  margin-bottom: 60px;
+}
+
+.advantages_list {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.advantages_list__item {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.services {
+  padding-top: 50px;
+}
+
+.services h2 {
+  margin-bottom: 50px;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.services_list__item {
+  color: #F1F1F1;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  width: 340px;
+}
+
+.services_list__item ul {
+  margin-top: -1px;
+  text-align: left;
+}
+
+.services_list__item span {
+  color: #DF4C3F;
+}
+
+.services__img_1 {
+  margin-bottom: 15px;
+}
+
+.process {
+  padding-top: 104px;
+}
+
+.process .container
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between
+}
+
+.process h2
+{
+  margin-bottom: 50px;
+	text-align:left;
+	font-size:28px
+}
+
+.process p
+{
+	color: #F1F1F1;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.process-export,.process-import
+{
+	width:500px
+}
+
+.about-us {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.about-us h2 {
+  margin-bottom: 40px;
+}
+
+.about-us__text {
+  color: #F8F8F8;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us__text span {
+  color: #00C055;
+  font-weight: 600;
+}
+
+
+
+.contacts h2 {
+  margin-bottom: 45px;
+}
+
+.contacts_content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__descr {
+  margin-right: 100px;
+}
+
+.form input {
+  display: block;
+  width: 400px;
+  height: 80px;
+  border-radius: 100px;
+  background: none;
+  border: 1px solid #F8F8F8;
+  padding-left: 34px;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 80px;
+  color: #fff;
+}
+
+.alert-success {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.form input::placeholder {
+  color: #FFF;
+}
+.form input::-webkit-input-placeholder {
+  color: #FFF;
+}
+.form input::-ms-input-placeholder {
+  color: #FFF;
+}
+.form input:-moz-placeholder {
+  color: #FFF;
+}
+.form input::-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.form input:-ms-input-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+
+.form button {
+  display: block;
+  width: 400px;
+  height: 80px;
+  border-radius: 100px;
+  background: #DF4C3F;
+  box-shadow: 5px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  margin-bottom: 55px;
+}
+
+.bottom-questions-form {
+  width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  border: 2px solid #F8F8F8;
+  margin-bottom: 66px;
+}
+
+.bottom-questions-form .number-of-phone {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.bottom-questions-form-icon {
+  width: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-questions-form-icon a img {
+  width: 60px;
+}
+
+.contacts__map-descr {
+  width: 461px;
+  height: 225px;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: -225px;
+  background: linear-gradient(0deg, #DF4C3F -7.53%, rgba(255, 255, 255, 0.00) 116.27%);
+}
+
+.start-working-contact {
+  margin-left: 20px !important;
+  margin-top: 98px !important;
+} 
+
+.start-working-contact li {
+  color: #F8F8F8;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+
+.start-working-contact li a {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+
+.contacts__inform {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+
+
+
+footer {
+  background: rgba(241, 241, 241, 0.15);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer_column__1 {
+  width: 363px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_column__1 .number-of-phone {
+  font-size: 20px;
+}
+
+.footer_column__2 {
+  text-align: right;
+}
+
+.footer_column__2 div {
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.footer-right-contact div .conf-policy{
+  color: #dad6d6;
+}
+
+
+
+@media (max-width: 1240px) {
+  main .container {
+    width: 1140px;
+    padding-top: 145px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    width: 1024px;
+  }
+  main .container {
+      width: 1024px;
+  }
+  .contacts__map iframe {
+    width: 495px;
+    height: 525px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+  header .nav {
+    display: none;
+  }
+  .main__text {
+    width: 90%
+  }
+  .header__nav {
+    width: 176px;
+  }
+  .contacts__map iframe {
+    width: 448px;
+    height: 524px;
+  }
+  .contacts__map-descr {
+    width: 407px;
+    margin-left: -1px;
+  }
+  .process-export, .process-import {
+    width: 45%;
+  }
+  .contacts__map-descr {
+    width: 445px;
+    height: 225px;
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -225px;
+    background: linear-gradient(0deg, #DF4C3F -7.53%, rgba(255, 255, 255, 0.00) 116.27%);
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 800px;
+  }
+  main .container {
+      width: 800px;
+  }
+  .advantages_list {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  .services_list__item {
+    width: 30%;
+  }
+  .advantages_list__item, .services_list__item, 
+  .about-us__text, .form input, .form button, 
+  .start-working-contact li, .start-working-contact li a,
+  .services_list__item {
+    font-size: 23px;
+  }
+  .contacts_content__wrapper {
+    display: block;
+  }
+  .contacts__descr {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .contacts__map iframe {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 60px;
+  }
+  .footer_column__2 {
+    width: 354px;
+  }
+  .contacts__map-descr {
+    margin-top: -284px;
+  }
+  .footer_column__2 div {
+    font-size: 16px;
+  }
+  .contacts__map-descr {
+    width: 551px;
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 640px;
+  }
+  main .container {
+    width: 640px;
+    padding-top: 152px;
+  }
+  .main__btn {
+    width: 361px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main__btn-icon img {
+    width: 35.164px;
+  }
+  
+  .services h2 {
+    margin-bottom: 35px;
+  }
+  .services_list {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .services_list__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer_column__1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer_column__2 {
+    width: 100%;
+  }
+  .conf-policy {
+    text-align: center;
+  }
+  .contacts__map-descr {
+    width: 384px;
+    margin-left: 257px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 540px;
+  }
+  main .container {
+    width: 540px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .main__btn-text a {
+    font-size: 23px;;
+  }
+  .main__btn {
+    width: 322px;
+    height: 74px;
+  }
+   .advantages_list {
+    width: 100%;
+  }
+  .process .container {
+    display: block;
+  }
+  .process-export, .process-import {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .process h2 {
+    margin-top: 20px;
+  }
+  .contacts__map-descr {
+    width: 385px;
+    margin-left: 156px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+  main .container {
+    width: 480px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .main__text {
+    font-size: 22px;
+    width: 100%;
+  }
+  .main__btn-text a {
+    font-size: 22px;
+  }
+  .main__btn {
+    width: 296px;
+    height: 70px;
+  }
+  .main__btn-icon img {
+    width: 33.164px;
+  }
+  .advantages h2 {
+    margin-bottom: 35px;
+  }
+  .advantages_list__item, .services_list__item, 
+  .about-us__text, .form input, .form button, 
+  .start-working-contact li, .start-working-contact li a {
+    font-size: 22px;
+  }
+  .contacts__inform {
+    font-size: 16px;
+  }
+  .about-us {
+    padding-top: 41px;
+  }
+  .process {
+    padding-top: 48px;
+  }
+  .process h2 {
+    margin-bottom: 27px;
+  }
+  .number-of-phone {
+    font-size: 16px;
+  }
+  .contacts__map-descr {
+    width: 385px;
+    margin-left: 97px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+  main .container {
+    width: 400px;
+  }
+  .main__btn {
+    width: 270px;
+  }
+  main .container {
+    padding-top: 114px;
+    padding-bottom: 201px;
+  }
+  .nav__item, .number-of-phone {
+    font-size: 16px;
+  }
+  .header__nav {
+    width: 141px;
+  }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .main__text {
+    font-size: 19px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+  .main__btn-text a {
+    font-size: 19px;
+  }
+  .main__btn-icon img {
+    width: 26.164px;
+  }
+  .main__btn {
+    width: 272px;
+  }
+  h2, .process h2 {
+    font-size: 29px;
+  }
+  .advantages_list__item, .services_list__item, 
+  .about-us__text, .form input, .form button, 
+  .start-working-contact li, .start-working-contact li a {
+    font-size: 20px;
+  }
+  .advantages_list__item {
+    margin-bottom: 25px;
+  }
+  .services__descr {
+    width: 400px;
+  }
+  .form input, .form button {
+    width: 350px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .bottom-questions-form {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+  }
+  .contacts__map-descr {
+    width: 339px;
+    margin-left: 60px;
+  }
+  .footer_column__2 div {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 320px;
+  }
+  .services__img_1 img, .services__img_2 img {
+    width: 260px;
+  }
+  main .container {
+    width: 320px;
+  }
+  .logo img {
+    width: 96px;
+  }
+  .header__nav {
+    font-size: 14px;
+  }
+  header .number-of-phone {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 26px;
+    width: 320px;
+  }
+  .logo a {
+    font-size: 18px;
+  }
+  .main__text {
+    font-size: 16px;
+  }
+  .main__btn-text a {
+    font-size: 16px;
+  }
+  .main__btn {
+    width: 240px;
+    height: 53px;
+  }
+  h2, .process h2 {
+    font-size: 24px;
+  }
+  .advantages_list__item, .services_list__item, 
+  .about-us__text, .form input, .form button, 
+  .start-working-contact li, .start-working-contact li a,
+  .process p {
+    font-size: 16px;
+  }
+  .advantages_list__item {
+    margin-bottom: 20px;
+  }
+  .services__descr {
+    width: 320px;
+  }
+  .services_list {
+    width: 100%;
+  }
+  .contacts__descr {
+    width: 100%;
+  }
+  .form input, .form button {
+    width: 320px;
+    height: 65px;
+  }
+  .bottom-questions-form {
+    width: 320px;
+  }
+  .contacts__map-descr {
+    width: 268px;
+    height: 187px;
+    margin-top: -245px;
+    margin-left: 54px;
+  }
+  .logo a {
+    font-size: 16px;
+  }
+  .footer_column__1 .number-of-phone {
+    font-size: 16px;
+  }
+  .footer_column__1 {
+    margin-bottom: 34px;
+  }
+  .contacts__inform {
+    font-size: 14px;
+  }
+  .process-export, .process-import {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 280px;
+  }
+  main .container {
+    width: 280px;
+    padding-top: 95px;
+    padding-bottom: 170px;
+  }
+  h1 {
+    font-size: 23px;
+    width: 280px;
+  }
+  .main__text {
+    font-size: 14px;
+  }
+  .main__btn-text a {
+    font-size: 15px;
+  }
+  .main__btn-icon img {
+    width: 18.164px;
+  }
+  .main__btn {
+    width: 211px;
+    height: 47px;
+  }
+  .advantages {
+    padding-top: 54px;
+  }
+  h2, .process h2 {
+    font-size: 19px;
+  }
+  .process {
+    padding-top: 19px;
+  }
+  .main__btn {
+    width: 208px;
+    height: 47px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .advantages_list__item, .services_list__item, 
+  .about-us__text, .form input, .form button, 
+  .start-working-contact li, .start-working-contact li a {
+    font-size: 15px;
+  }
+  .services__descr {
+    width: 100%;
+  }
+  .about-us__text {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .form input, .form button {
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .bottom-questions-form {
+    width: 280px;
+  }
+  .bottom-questions-form-icon a img {
+    width: 41px;
+  }
+  .bottom-questions-form-icon {
+    width: 101px;
+  }
+  .contacts__map-descr {
+    width: 280px;
+  }
+  .footer_column__1 .number-of-phone {
+    font-size: 12px;
+  }
+  .footer_column__2 div {
+    font-size: 12px;
+  }
+  .contacts__map-descr {
+    width: 215px;
+    height: 187px;
+    margin-top: -247px;
+    margin-left: 68px;
+  }
+}
+
+  
